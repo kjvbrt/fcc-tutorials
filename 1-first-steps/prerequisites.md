@@ -70,11 +70,11 @@ is available on `cvmfs` and can be set up using:
 ```
 source /cvmfs/sw.hsf.org/key4hep/setup.sh
 ```
-For compatibility reasons, the previous way of setting up the software
+Alternatively,
 ```
 source /cvmfs/fcc.cern.ch/sw/latest/setup.sh
 ```
-is still available.
+sets up the Key4hep stack together with FCC-specific additions on top of it; for the purposes of this tutorial the two are equivalent.
 
 ## Special notes or alternative cases / settings
 ### Bash shell
