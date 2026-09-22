@@ -34,7 +34,7 @@ Then, make sure your **setup of the FCC software** is working correctly. A quick
 which DelphesPythia8_EDM4HEP
 ```
 
-If the above command fails without printing a path like `/cvmfs/sw.hsf.org/spackages7/k4simdelphes/00-03-01/x86_64-centos7-gcc11.2.0-opt/7he4m/bin/DelphesPythia8_EDM4HEP`, you need to setup the FCC software stack 
+If the above command fails without printing a path like `/cvmfs/sw.hsf.org/key4hep/releases/2026-04-08/x86_64-almalinux9-gcc14.2.0-opt/k4simdelphes/00-07-06-36x4ef/bin/DelphesPythia8_EDM4HEP`, you need to setup the FCC software stack 
 
 ```
 source /cvmfs/fcc.cern.ch/sw/latest/setup.sh
@@ -43,15 +43,13 @@ source /cvmfs/fcc.cern.ch/sw/latest/setup.sh
 When sourcing the stack, you should see a message like:
 
 ```
- ...  Key4HEP release: key4hep-stack/2023-04-08
- ... Use the following command to reproduce the current environment: 
- ...
-         source /cvmfs/sw.hsf.org/spackages7/key4hep-stack/2023-04-08/x86_64-centos7-gcc11.2.0-opt/urwcv/setup.sh
- ...
- ... done.
+Setting up the Key4hep software stack release latest-opt from CVMFS
+Use the following command to reproduce the current environment: 
+
+        source /cvmfs/sw.hsf.org/key4hep/setup.sh -r 2026-04-08
 ```
 
-which means that the version `2023-04-08` of `key4hep-stack` is sourced.
+which means that the release `2026-04-08` of the Key4hep stack is sourced.
 
 
 (delphesedm4hep)=
@@ -80,7 +78,7 @@ Other detector cards can be found in the `$DELPHES_DIR/cards` directory, such as
 But let's download the official one:
 
 ```bash
-wget https://raw.githubusercontent.com/HEP-FCC/FCC-config/winter2023/FCCee/Delphes/card_IDEA.tcl
+wget https://raw.githubusercontent.com/HEP-FCC/FCC-config/pre_summer2026/FCCee/Delphes/card_IDEA.tcl
 ```
 
 To check the arguments ordering, please run the executable:
@@ -107,7 +105,7 @@ Before running we need to define the collections that we want to write. The firs
 We also download the official version of this file:
 
 ```bash
-wget https://raw.githubusercontent.com/HEP-FCC/FCC-config/winter2023/FCCee/Delphes/edm4hep_IDEA.tcl
+wget https://raw.githubusercontent.com/HEP-FCC/FCC-config/pre_summer2026/FCCee/Delphes/edm4hep_IDEA.tcl
 ```
 
 The following commands will run Pythia8 and Delphes and produce the relevant signal and background samples:
