@@ -74,7 +74,7 @@ Alternatively,
 ```
 source /cvmfs/fcc.cern.ch/sw/latest/setup.sh
 ```
-sets up the Key4hep stack together with FCC-specific additions on top of it; for the purposes of this tutorial the two are equivalent.
+also works; `/cvmfs/fcc.cern.ch` hosts alongside the Key4hep stack also FCC-specific software and data, for the purposes of this tutorial sourcing either is equivalent.
 
 ## Special notes or alternative cases / settings
 ### Bash shell
